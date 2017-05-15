@@ -13,7 +13,7 @@
 }
 
 @if $font-weight-responsive {
-  @media ($not-small) {
+  @include not-small ()  {
     @if $fw-thin   { .ns-txt-thin    { @include font-weight(100); } }
     @if $fw-light  { .ns-txt-light   { @include font-weight(200); } }
     @if $fw-regular{ .ns-txt-regular { @include font-weight(300); } }
@@ -22,7 +22,7 @@
     @if $fw-bold   { .ns-txt-bold    { @include font-weight(600); } }
     @if $fw-black  { .ns-txt-black   { @include font-weight(700); } }
   }
-  @media ($medium-break) {
+  @include medium-break ()  {
     @if $fw-thin   { .md-txt-thin    { @include font-weight(100); } }
     @if $fw-light  { .md-txt-light   { @include font-weight(200); } }
     @if $fw-regular{ .md-txt-regular { @include font-weight(300); } }
@@ -31,7 +31,7 @@
     @if $fw-bold   { .md-txt-bold    { @include font-weight(600); } }
     @if $fw-black  { .md-txt-black   { @include font-weight(700); } }
   }
-  @media ($large-break) {
+  @include large-break ()  {
     @if $fw-thin   { .lg-txt-thin    { @include font-weight(100); } }
     @if $fw-light  { .lg-txt-light   { @include font-weight(200); } }
     @if $fw-regular{ .lg-txt-regular { @include font-weight(300); } }

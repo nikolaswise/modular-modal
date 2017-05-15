@@ -8,15 +8,15 @@
 }
 
 @if $word-spacing-responsive {
-  @media ($not-small) {
+  @include not-small ()  {
     .ns-txt-spaced-wide  { @include word-spacing(20); }
     .ns-txt-spaced-tight { @include word-spacing(-10); }
   }
-  @media ($medium-break) {
+  @include medium-break ()  {
     .md-txt-spaced-wide  { @include word-spacing(20); }
     .md-txt-spaced-tight { @include word-spacing(-10); }
   }
-  @media ($large-break) {
+  @include large-break ()  {
     .lg-txt-spaced-wide  { @include word-spacing(20); }
     .lg-txt-spaced-tight { @include word-spacing(-10); }
   }

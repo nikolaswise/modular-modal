@@ -4,24 +4,24 @@
 
 @if $leading {
   @for $i from 1 through 12 {
-    .txt-lead-#{$i} { @include leading($n); }
+    .txt-lead-#{$i} { @include leading($i); }
   }
 }
 
 @if $leading-responsive {
-  @media ($not-small) {
+  @include not-small ()  {
     @for $i from 1 through 12 {
-      .ns-txt-lead-#{$i} { @include leading($n); }
+      .ns-txt-lead-#{$i} { @include leading($i); }
     }
   }
-  @media ($medium-break) {
+  @include medium-break ()  {
    @for $i from 1 through 12 {
-      .md-txt-lead-#{$i} { @include leading($n); }
+      .md-txt-lead-#{$i} { @include leading($i); }
     }
   }
-  @media ($large-break) {
+  @include large-break ()  {
     @for $i from 1 through 12 {
-      .lg-txt-lead-#{$i} { @include leading($n); }
+      .lg-txt-lead-#{$i} { @include leading($i); }
     }
   }
 }

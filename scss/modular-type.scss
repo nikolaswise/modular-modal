@@ -1,20 +1,52 @@
+// This should be a diff module at some point
+@mixin not-small {
+  @media ( min-width: 30rem ) {
+    @content;
+  }
+}
+
+
+@mixin medium-break {
+  @media (min-width: 30rem) and (max-width: 60rem) {
+    @content;
+  }
+}
+
+@mixin large-break {
+  @media (min-width: 60rem) {
+    @content;
+  }
+}
+
+
 // CSS Generation Variables
-$leading:                 true;
-$responsive-leading:      true;
-$tracking:                true;
-$responsive-tracking:     true;
-$word-spacing:            true;
-$responsive-word-spacing: true;
-$alignment:               true;
-$responsive-alignment:    true;
-$font-size:               true;
-$responsive-font-size:    true;
-$font-weight:             true;
-  $fw-thin:               true;
-  $fw-light:              true;
-  $fw-regular:            true;
-  $fw-medium:             true;
-  $fw-demi:               true;
-  $fw-bold:               true;
-  $fw-black:              true;
-$font-weight-responsive:  true;
+$leading:                 true !default;
+$leading-responsive:      true !default;
+$tracking:                true !default;
+$tracking-responsive:     true !default;
+$word-spacing:            true !default;
+$word-spacing-responsive: true !default;
+$alignment:               true !default;
+$alignment-responsive:    true !default;
+$font-size:               true !default;
+$font-size-responsive:    true !default;
+$font-weight:             true !default;
+  $fw-thin:               true !default;
+  $fw-light:              true !default;
+  $fw-regular:            true !default;
+  $fw-medium:             true !default;
+  $fw-demi:               true !default;
+  $fw-bold:               true !default;
+  $fw-black:              true !default;
+$font-weight-responsive:  true !default;
+$font-style:              true !default;
+$font-style-responsive:   true !default;
+
+@import "config";
+@import "type-scale";
+@import "alignment";
+@import "leading";
+@import "tracking";
+@import "word-spacing";
+@import "font-style";
+@import "font-weights";

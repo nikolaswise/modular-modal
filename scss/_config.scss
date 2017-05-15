@@ -22,8 +22,9 @@ $unison:             1;
 $golden:             1.618;
 
 //
+$rem-size:           16px              !default;
 $ratio:              $golden           !default;
-$body-size:          16px              !default;
+$body-size:          1rem              !default;
 $small-size:         0.85rem           !default;
 $baseline:           0.25rem           !default;
 $leading:            5*$baseline       !default;

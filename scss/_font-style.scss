@@ -6,18 +6,20 @@
 }
 
 @if $font-style {
-  .txt-roman  { @include font-normal();}
-  .txt-italic { @include font-italic();}
+  .txt-roman  { @include font-roman(); }
+  .txt-italic { @include font-italic(); }
 }
 @if $font-style-responsive {
-  @media ($not-small) {
-    .txt-roman  { @include font-normal();}
-    .txt-italic { @include font-italic();}
+  @include not-small ()  {
+    .txt-roman  { @include font-roman(); }
+    .txt-italic { @include font-italic(); }
   }
-  @media ($medium-break) {
-    .txt-roman  { @include font-normal();}
-    .txt-italic { @include font-italic();}
-  @media ($large-break) {
-    .txt-roman  { @include font-normal();}
-    .txt-italic { @include font-italic();}
+  @include medium-break ()  {
+    .txt-roman  { @include font-roman(); }
+    .txt-italic { @include font-italic(); }
+  }
+  @include large-break ()  {
+    .txt-roman  { @include font-roman(); }
+    .txt-italic { @include font-italic(); }
+  }
 }

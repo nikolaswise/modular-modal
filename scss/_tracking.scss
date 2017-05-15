@@ -8,15 +8,15 @@
 }
 
 @if $tracking-responsive {
-  @media ($not-small) {
+  @include not-small ()  {
     .ns-txt-tracked-wide  { @include tracking(20); }
     .ns-txt-tracked-tight { @include tracking(-10); }
   }
-  @media ($medium-break) {
+  @include medium-break ()  {
     .md-txt-tracked-wide  { @include tracking(20); }
     .md-txt-tracked-tight { @include tracking(-10); }
   }
-  @media ($large-break) {
+  @include large-break ()  {
     .lg-txt-tracked-wide  { @include tracking(20); }
     .lg-txt-tracked-tight { @include tracking(-10); }
   }

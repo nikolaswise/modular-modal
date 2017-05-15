@@ -39,23 +39,23 @@
 
 @if $font-size {
   @for $i from 0 through 12 {
-    .txt-size-#{$i} { @include font-size($n); }
+    .txt-size-#{$i} { @include font-size($i); }
   }
 }
 @if $font-size-responsive {
-  @media ($not-small) {
+  @include not-small ()  {
     @for $i from 0 through 12 {
-      .ns-txt-size-#{$i} { @include font-size($n); }
+      .ns-txt-size-#{$i} { @include font-size($i); }
     }
   }
-  @media ($medium-break) {
+  @include medium-break ()  {
     @for $i from 0 through 12 {
-      .md-txt-size-#{$i} { @include font-size($n); }
+      .md-txt-size-#{$i} { @include font-size($i); }
     }
   }
-  @media ($large-break) {
+  @include large-break ()  {
     @for $i from 0 through 12 {
-      .lg-txt-size-#{$i} { @include font-size($n); }
+      .lg-txt-size-#{$i} { @include font-size($i); }
     }
   }
 }
