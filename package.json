@@ -4,28 +4,24 @@
   "description": "CSS and SASS modular mini framework for creating typographic systems",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/modular-type.scss css/modular-type.css",
-    "postbuild": "postcss css/modular-type.css --use autoprefixer -d css/",
-    "minify": "postcss css/modular-type.css --use cssnano -o css/modular-type.min.css",
-    "stats": "cssstats css/modular-type.css  ./css-stats.json",
+    "build": "node-sass scss/modular-.scss css/modular-.css",
+    "postbuild": "postcss css/modular-.css --use autoprefixer -d css/",
+    "minify": "postcss css/modular-.css --use cssnano -o css/modular-.min.css",
+    "stats": "cssstats css/modular-.css  ./css-stats.json",
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikolaswise/modular-type.git"
+    "url": "git+https://github.com/nikolaswise/modular-.git"
   },
   "keywords": [
-    "type",
-    "typography",
-    "css",
-    "sass"
   ],
   "author": "Nikolas Wise",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nikolaswise/modular-type/issues"
+    "url": "https://github.com/nikolaswise/modular-/issues"
   },
-  "homepage": "https://github.com/nikolaswise/modular-type#readme",
+  "homepage": "https://github.com/nikolaswise/modular-#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.0",
     "cssnano": "^3.10.0",

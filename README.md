@@ -1,2 +1,2 @@
-# modular-type
-Modular design system for typographic systems
+# modular-
+Modular design system for
