@@ -1,0 +1,23 @@
+@mixin font-roman() {
+  font-style: normal;
+}
+@mixin font-italic() {
+  font-style: italic;
+}
+
+@if $font-style {
+  .txt-roman  { @include font-normal();}
+  .txt-italic { @include font-italic();}
+}
+@if $font-style-responsive {
+  @media ($not-small) {
+    .txt-roman  { @include font-normal();}
+    .txt-italic { @include font-italic();}
+  }
+  @media ($medium-break) {
+    .txt-roman  { @include font-normal();}
+    .txt-italic { @include font-italic();}
+  @media ($large-break) {
+    .txt-roman  { @include font-normal();}
+    .txt-italic { @include font-italic();}
+}

@@ -1,0 +1,9 @@
+.txt-inline { @include text-inline(); }
+.txt-center { @include text-center(); }
+.txt-left   { @include text-left();   }
+.txt-right  { @include text-right();  }
+
+
+@include tracking($n)
+@include leading($n)
+@include word-spacing($n)

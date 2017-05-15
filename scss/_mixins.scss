@@ -1,0 +1,21 @@
+@mixin tracking($n) {
+  letter-spacing: $n * 0.001em;
+}
+@mixin leading($n) {
+  line-height: $n * $baseline;
+}
+@mixin word-spacing($n) {
+  word-spacing: $n * 0.001em;
+}
+@mixin text-inline() {
+  display: inline;
+}
+@mixin text-center() {
+  text-align: center;
+}
+@mixin text-left() {
+  text-align: left;
+}
+@mixin text-right() {
+  text-align: right;
+}

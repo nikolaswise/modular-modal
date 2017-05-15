@@ -1,0 +1,28 @@
+{
+  "name": "modular-type",
+  "version": "1.0.0",
+  "description": "CSS and SASS modular mini framework for creating typographic systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolaswise/modular-type.git"
+  },
+  "keywords": [
+    "type",
+    "typography",
+    "css",
+    "sass"
+  ],
+  "author": "Nikolas Wise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolaswise/modular-type/issues"
+  },
+  "homepage": "https://github.com/nikolaswise/modular-type#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  }
+}
