@@ -11,15 +11,15 @@
 }
 @if $font-style-responsive {
   @include not-small ()  {
-    .txt-roman  { @include font-roman(); }
-    .txt-italic { @include font-italic(); }
+    .ns-txt-roman  { @include font-roman(); }
+    .ns-txt-italic { @include font-italic(); }
   }
   @include medium-break ()  {
-    .txt-roman  { @include font-roman(); }
-    .txt-italic { @include font-italic(); }
+    .md-txt-roman  { @include font-roman(); }
+    .md-txt-italic { @include font-italic(); }
   }
   @include large-break ()  {
-    .txt-roman  { @include font-roman(); }
-    .txt-italic { @include font-italic(); }
+    .lg-txt-roman  { @include font-roman(); }
+    .lg-txt-italic { @include font-italic(); }
   }
 }

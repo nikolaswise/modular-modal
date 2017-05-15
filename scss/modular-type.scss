@@ -4,14 +4,11 @@
     @content;
   }
 }
-
-
 @mixin medium-break {
   @media (min-width: 30rem) and (max-width: 60rem) {
     @content;
   }
 }
-
 @mixin large-break {
   @media (min-width: 60rem) {
     @content;
