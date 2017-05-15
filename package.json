@@ -4,6 +4,10 @@
   "description": "CSS and SASS modular mini framework for creating typographic systems",
   "main": "index.js",
   "scripts": {
+    "build": "node-sass scss/modular-type.scss css/modular-type.css",
+    "postbuild": "postcss css/modular-type.css --use autoprefixer -d css/",
+    "minify": "postcss css/modular-type.css --use cssnano -o css/modular-type.min.css",
+    "stats": "cssstats css/modular-type.css  ./css-stats.json",
     "test": "test"
   },
   "repository": {
@@ -23,6 +27,11 @@
   },
   "homepage": "https://github.com/nikolaswise/modular-type#readme",
   "devDependencies": {
-    "node-sass": "^4.5.2"
+    "autoprefixer": "^7.1.0",
+    "cssnano": "^3.10.0",
+    "cssstats-cli": "^1.0.0-beta.2",
+    "node-sass": "^4.5.2",
+    "postcss-cli": "^4.0.0",
+    "sass-lint": "^1.10.2"
   }
 }
