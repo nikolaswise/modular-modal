@@ -1,7 +1,7 @@
 {
-  "name": "modular-type",
+  "name": "modular-",
   "version": "1.0.0",
-  "description": "CSS and SASS modular mini framework for creating typographic systems",
+  "description": "CSS and SASS modular mini framework for creating design systems",
   "main": "index.js",
   "scripts": {
     "build": "node-sass scss/modular-.scss css/modular-.css",
