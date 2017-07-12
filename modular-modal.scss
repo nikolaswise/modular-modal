@@ -52,6 +52,6 @@ $easing-position: translate3d(0, 20px, 0) !default;
   }
 
 @if $include-modal == true {
-  .modal.        { @include modal-overlay() ;}
+  .modal         { @include modal-overlay() ;}
   .modal-content { @include modal-content() ;}
 }
