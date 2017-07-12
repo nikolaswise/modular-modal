@@ -1,0 +1,57 @@
+$include-modal:   true !default;
+$easing-function: cubic-bezier(0.215, 0.440, 0.420, 0.880) !default;
+$easing-duration: 300ms !default;
+$easing-position: translate3d(0, 20px, 0) !default;
+
+@mixin modal() {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0ms linear $easing-duration, opacity $easing-duration $easing-function;
+  z-index: 101;
+  &.is-active {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0ms;
+    .modal-content {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0ms;
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+}
+
+  @mixin modal-content() {
+    box-sizing: border-box;
+    max-height: 80vh;
+    z-index: 102;
+    float: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0ms linear $easing-duration, visibility 0ms linear $easing-duration, opacity $easing-duration $easing-function;
+    transform: $easing-position;
+  }
+
+@if $include-modal == true {
+  .modal.        { @include modal-overlay() ;}
+  .modal-content { @include modal-content() ;}
+}

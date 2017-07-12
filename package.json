@@ -1,30 +1,35 @@
 {
-  "name": "modular-",
+  "name": "modular-modal",
   "version": "1.0.0",
   "description": "CSS and SASS modular mini framework for creating design systems",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/modular-.scss css/modular-.css",
-    "postbuild": "postcss css/modular-.css --use autoprefixer -d css/",
-    "minify": "postcss css/modular-.css --use cssnano -o css/modular-.min.css",
-    "stats": "cssstats css/modular-.css  ./css-stats.json",
+    "build": "node-sass scss/modular-modal.scss css/modular-modal.css",
+    "postbuild": "postcss css/modular-modal.css --use autoprefixer -d css/",
+    "minify": "postcss css/modular-modal.css --use cssnano -o css/modular-modal.min.css",
+    "stats": "cssstats css/modular-modal.css  ./css-stats.json",
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikolaswise/modular-.git"
+    "url": "git+https://github.com/nikolaswise/modular-modal.git"
   },
   "keywords": [],
   "author": "Nikolas Wise",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nikolaswise/modular-/issues"
+    "url": "https://github.com/nikolaswise/modular-modal/issues"
   },
-  "homepage": "https://github.com/nikolaswise/modular-#readme",
+  "homepage": "https://github.com/nikolaswise/modular-modal#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.0",
     "cssnano": "^3.10.0",
     "cssstats-cli": "^1.0.0-beta.2",
+    "modular-aria": "github:nikolaswise/modular-aria",
+    "modular-bus": "github:nikolaswise/modular-bus",
+    "modular-class": "github:nikolaswise/modular-class",
+    "modular-dom": "github:nikolaswise/modular-dom",
+    "modular-event": "github:nikolaswise/modular-event",
     "node-sass": "^4.5.2",
     "postcss-cli": "^4.0.0",
     "rollup": "^0.41.6",
