@@ -25,6 +25,7 @@
     "autoprefixer": "^7.1.0",
     "cssnano": "^3.10.0",
     "cssstats-cli": "^1.0.0-beta.2",
+    "gh-release": "^3.1.1",
     "modular-aria": "github:nikolaswise/modular-aria",
     "modular-bus": "github:nikolaswise/modular-bus",
     "modular-class": "github:nikolaswise/modular-class",
